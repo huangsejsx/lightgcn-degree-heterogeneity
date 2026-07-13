@@ -1,0 +1,38 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# Raw downloaded data
+data/raw/
+
+# Large or reproducible processed data
+data/processed/interactions.csv
+data/processed/train.csv
+data/processed/val.csv
+data/processed/test.csv
+data/processed/edge_structural_features.csv
+
+# Generated embeddings
+results/*.npy
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp

@@ -1,0 +1,4 @@
+scenario,low_threshold,high_threshold,tail_test_count,medium_test_count,head_test_count,tail_test_share,medium_test_share,head_test_share,cold_start_test_count,cold_start_test_rate
+low,26.0,35.0,259,551,190,0.259,0.551,0.19,0,0.0
+medium,13.0,35.0,79,390,531,0.079,0.39,0.531,0,0.0
+high,4.0,25.0,29,175,796,0.029,0.175,0.796,2,0.002

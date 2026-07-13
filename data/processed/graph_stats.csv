@@ -1,0 +1,2 @@
+num_users,num_items,num_edges,density,sparsity,user_degree_min,user_degree_mean,user_degree_median,user_degree_max,item_degree_min,item_degree_mean,item_degree_median,item_degree_max,user_low_threshold,user_high_threshold,item_low_threshold,item_high_threshold
+6035,3525,563206,0.026474689606139128,0.9735253103938609,2,93.32328086164043,56.0,1433,1,159.77475177304964,48.0,2805,21.0,143.0,9.0,240.0

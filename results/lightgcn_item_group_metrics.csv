@@ -1,0 +1,9 @@
+model,group_type,group,K,Recall,NDCG
+LightGCN,item_degree,high,10,0.09150156412930135,0.044557072795989736
+LightGCN,item_degree,high,20,0.15771637122002086,0.06108941415321678
+LightGCN,item_degree,low,10,0.0,0.0
+LightGCN,item_degree,low,20,0.0,0.0
+LightGCN,item_degree,medium,10,0.00047505938242280285,0.0001692195663221008
+LightGCN,item_degree,medium,20,0.0014251781472684087,0.00038920966706489947
+LightGCN,item_degree,unknown,10,0.0,0.0
+LightGCN,item_degree,unknown,20,0.0,0.0
