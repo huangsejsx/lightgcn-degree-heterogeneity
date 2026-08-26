@@ -1,0 +1,2 @@
+comparison,Recall@20_difference,ci_low,ci_high
+LightGCN - ItemCF,-0.01686746987951808,-0.03266398929049533,0.0005354752342704095

@@ -21,7 +21,7 @@ N_ITEMS = 600
 EMBED_DIM = 64
 N_LAYERS = 2
 LEARNING_RATE = 0.001
-EPOCHS = 20
+EPOCHS = 100
 TOP_K = 20
 
 SCENARIOS = ["low", "medium", "high"]

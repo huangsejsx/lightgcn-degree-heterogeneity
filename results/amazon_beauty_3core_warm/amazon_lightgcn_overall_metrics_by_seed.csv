@@ -1,0 +1,7 @@
+dataset,model,run,seed,K,Recall,NDCG,n
+Amazon Beauty 3-core warm-start,LightGCN,seed_42,42,10,0.6473895582329318,0.30121179791987707,1245
+Amazon Beauty 3-core warm-start,LightGCN,seed_42,42,20,0.697991967871486,0.31417338689826174,1245
+Amazon Beauty 3-core warm-start,LightGCN,seed_43,43,10,0.6409638554216868,0.27470929344770895,1245
+Amazon Beauty 3-core warm-start,LightGCN,seed_43,43,20,0.695582329317269,0.28836795240625307,1245
+Amazon Beauty 3-core warm-start,LightGCN,seed_44,44,10,0.6674698795180722,0.30491993305640364,1245
+Amazon Beauty 3-core warm-start,LightGCN,seed_44,44,20,0.7052208835341366,0.31462617823669864,1245

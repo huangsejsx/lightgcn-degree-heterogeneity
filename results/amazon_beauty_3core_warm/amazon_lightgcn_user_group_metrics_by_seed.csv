@@ -1,0 +1,13 @@
+dataset,model,run,seed,user_group,K,Recall,NDCG,n
+Amazon Beauty 3-core warm-start,LightGCN,seed_42,42,tail,10,0.3881932021466905,0.18574203464072106,559
+Amazon Beauty 3-core warm-start,LightGCN,seed_42,42,head,10,0.858600583090379,0.39530450589808147,686
+Amazon Beauty 3-core warm-start,LightGCN,seed_42,42,tail,20,0.46511627906976744,0.20538294948266778,559
+Amazon Beauty 3-core warm-start,LightGCN,seed_42,42,head,20,0.8877551020408163,0.4028233205940591,686
+Amazon Beauty 3-core warm-start,LightGCN,seed_43,43,tail,10,0.3810375670840787,0.16911582603900888,559
+Amazon Beauty 3-core warm-start,LightGCN,seed_43,43,head,10,0.8527696793002916,0.3607541160154398,686
+Amazon Beauty 3-core warm-start,LightGCN,seed_43,43,tail,20,0.47584973166368516,0.1926819978318933,559
+Amazon Beauty 3-core warm-start,LightGCN,seed_43,43,head,20,0.8746355685131195,0.3663394518334646,686
+Amazon Beauty 3-core warm-start,LightGCN,seed_44,44,tail,10,0.4150268336314848,0.1939995763464471,559
+Amazon Beauty 3-core warm-start,LightGCN,seed_44,44,head,10,0.8731778425655977,0.39530547154163065,686
+Amazon Beauty 3-core warm-start,LightGCN,seed_44,44,tail,20,0.4776386404293381,0.21007817513525717,559
+Amazon Beauty 3-core warm-start,LightGCN,seed_44,44,head,20,0.89067055393586,0.399819084554054,686

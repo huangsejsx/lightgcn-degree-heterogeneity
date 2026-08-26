@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+\centering
+\small
+\resizebox{\textwidth}{!}{
+\begin{tabular}{llrrrrr}
+\hline
+Dataset & Scoring & Overall Recall@20 & Tail Recall@20 & Medium Recall@20 & Head Recall@20 & Head--tail gap \\
+\hline
+Amazon Beauty warm-start & Dot product & 0.6996 $\pm$ 0.0050 & 0.1493 $\pm$ 0.0259 & 0.7455 $\pm$ 0.0109 & 0.7192 $\pm$ 0.0199 & 0.5699 $\pm$ 0.0445 \\
+Amazon Beauty warm-start & Cosine-normalised & 0.6843 $\pm$ 0.0085 & 0.1891 $\pm$ 0.0431 & 0.7595 $\pm$ 0.0066 & 0.6748 $\pm$ 0.0195 & 0.4858 $\pm$ 0.0565 \\
+MovieLens-1M & Dot product & 0.1318 $\pm$ 0.0023 & 0.0073 $\pm$ 0.0063 & 0.0171 $\pm$ 0.0017 & 0.1979 $\pm$ 0.0043 & 0.1905 $\pm$ 0.0043 \\
+MovieLens-1M & Cosine-normalised & 0.1065 $\pm$ 0.0033 & 0.0110 $\pm$ 0.0000 & 0.0686 $\pm$ 0.0031 & 0.1297 $\pm$ 0.0037 & 0.1187 $\pm$ 0.0037 \\
+\hline
+\end{tabular}
+}
+\caption{Post-hoc cosine-normalisation diagnostic for already trained LightGCN embeddings. Dot-product scoring uses the original learned embeddings, while cosine-normalised scoring first rescales each user and item embedding to unit norm. Values are mean $\pm$ standard deviation across optimisation seeds 42, 43, and 44.}
+\label{tab:cosine_normalized_lightgcn_diagnostic}
+\end{table}

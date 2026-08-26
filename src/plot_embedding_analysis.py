@@ -1,57 +1,87 @@
-import os
+from pathlib import Path
 import pandas as pd
 import matplotlib.pyplot as plt
 
-RESULT_DIR = "results"
+ROOT_DIR = Path(__file__).resolve().parents[1]
+RESULTS_DIR = ROOT_DIR / "results"
 
-def plot_user_embedding_norm():
-    df = pd.read_csv(f"{RESULT_DIR}/user_embedding_norm_by_group.csv")
-    order = ["low", "medium", "high"]
-    labels = {
-        "low": "Low-degree users",
-        "medium": "Medium-degree users",
-        "high": "High-degree users"
-    }
-    df["degree_group"] = pd.Categorical(df["degree_group"], categories=order, ordered=True)
-    df = df.sort_values("degree_group")
-    plt.figure(figsize=(7, 5))
-    plt.bar([labels[g] for g in df["degree_group"]], df["mean"])
+ORDER = ["low", "medium", "high"]
+LABELS = {
+    "low": "Low",
+    "medium": "Medium",
+    "high": "High",
+}
+
+
+def prepare_data(path):
+    df = pd.read_csv(path)
+    df["degree_group"] = pd.Categorical(
+        df["degree_group"],
+        categories=ORDER,
+        ordered=True,
+    )
+    return df.sort_values("degree_group")
+
+
+def plot_user_groups():
+    df = prepare_data(
+        RESULTS_DIR / "user_embedding_group_summary.csv"
+    )
+
+    plt.figure(figsize=(6, 4))
+    plt.bar(
+        [LABELS[group] for group in df["degree_group"]],
+        df["mean_norm"],
+        yerr=df["std_across_seeds"],
+        capsize=4,
+    )
+    plt.xlabel("User degree group")
+    plt.ylabel("Mean embedding norm")
     plt.title("User Embedding Norm by Degree Group")
-    plt.xlabel("User group")
-    plt.ylabel("Mean embedding norm")
-    plt.xticks(rotation=15)
     plt.tight_layout()
-    out_path = f"{RESULT_DIR}/user_embedding_norm_by_group.png"
-    plt.savefig(out_path, dpi=300)
+    plt.savefig(
+        RESULTS_DIR / "user_embedding_norm_by_group.png",
+        dpi=300,
+    )
     plt.close()
-    print(f"Saved {out_path}")
 
-def plot_item_embedding_norm():
-    df = pd.read_csv(f"{RESULT_DIR}/item_embedding_norm_by_group.csv")
-    order = ["low", "medium", "high"]
-    labels = {
-        "low": "Tail items",
-        "medium": "Medium-degree items",
-        "high": "Head items"
-    }
-    df["degree_group"] = pd.Categorical(df["degree_group"], categories=order, ordered=True)
-    df = df.sort_values("degree_group")
-    plt.figure(figsize=(7, 5))
-    plt.bar([labels[g] for g in df["degree_group"]], df["mean"])
-    plt.title("Item Embedding Norm by Degree Group")
-    plt.xlabel("Item group")
+
+def plot_item_groups():
+    df = prepare_data(
+        RESULTS_DIR / "item_embedding_group_summary.csv"
+    )
+
+    plt.figure(figsize=(6, 4))
+    plt.bar(
+        [LABELS[group] for group in df["degree_group"]],
+        df["mean_norm"],
+        yerr=df["std_across_seeds"],
+        capsize=4,
+    )
+    plt.xlabel("Item degree group")
     plt.ylabel("Mean embedding norm")
-    plt.xticks(rotation=15)
+    plt.title("Item Embedding Norm by Degree Group")
     plt.tight_layout()
-    out_path = f"{RESULT_DIR}/item_embedding_norm_by_group.png"
-    plt.savefig(out_path, dpi=300)
+    plt.savefig(
+        RESULTS_DIR / "item_embedding_norm_by_group.png",
+        dpi=300,
+    )
     plt.close()
-    print(f"Saved {out_path}")
+
 
 def main():
-    os.makedirs(RESULT_DIR, exist_ok=True)
-    plot_user_embedding_norm()
-    plot_item_embedding_norm()
+    plot_user_groups()
+    plot_item_groups()
+
+    print(
+        "Saved:",
+        RESULTS_DIR / "user_embedding_norm_by_group.png",
+    )
+    print(
+        "Saved:",
+        RESULTS_DIR / "item_embedding_norm_by_group.png",
+    )
+
 
 if __name__ == "__main__":
     main()

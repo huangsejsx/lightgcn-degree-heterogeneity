@@ -1,0 +1,4 @@
+degree_group,mean_norm,std_across_seeds,n_seeds
+high,3.6829054,0.004610293,3
+low,3.2416687,0.0056962674,3
+medium,2.9359663,0.0062315967,3

@@ -1,0 +1,43 @@
+dataset,scoring,seed,item_group,K,Recall,NDCG,n
+Amazon Beauty warm-start,cosine_normalized,42,tail,20,0.16417910447761194,0.09524962221564783,67
+Amazon Beauty warm-start,cosine_normalized,42,medium,20,0.7557251908396947,0.4478324128036372,524
+Amazon Beauty warm-start,cosine_normalized,42,head,20,0.6651376146788991,0.293798468233387,654
+Amazon Beauty warm-start,cosine_normalized,43,tail,20,0.23880597014925373,0.12620596428960684,67
+Amazon Beauty warm-start,cosine_normalized,43,medium,20,0.767175572519084,0.45200851286799903,524
+Amazon Beauty warm-start,cosine_normalized,43,head,20,0.6620795107033639,0.237646382554258,654
+Amazon Beauty warm-start,cosine_normalized,44,tail,20,0.16417910447761194,0.10819547163779424,67
+Amazon Beauty warm-start,cosine_normalized,44,medium,20,0.7557251908396947,0.4515507872020964,524
+Amazon Beauty warm-start,cosine_normalized,44,head,20,0.6972477064220184,0.282991751032345,654
+Amazon Beauty warm-start,dot_product,42,tail,20,0.13432835820895522,0.07395260866985587,67
+Amazon Beauty warm-start,dot_product,42,medium,20,0.7423664122137404,0.3156192607352967,524
+Amazon Beauty warm-start,dot_product,42,head,20,0.7201834862385321,0.33762469309198784,654
+Amazon Beauty warm-start,dot_product,43,tail,20,0.1791044776119403,0.0806845759639345,67
+Amazon Beauty warm-start,dot_product,43,medium,20,0.7576335877862596,0.30562611846177556,524
+Amazon Beauty warm-start,dot_product,43,head,20,0.6987767584097859,0.29581674018689763,654
+Amazon Beauty warm-start,dot_product,44,tail,20,0.13432835820895522,0.07136003338101779,67
+Amazon Beauty warm-start,dot_product,44,medium,20,0.7366412213740458,0.3148712498711481,524
+Amazon Beauty warm-start,dot_product,44,head,20,0.7385321100917431,0.33935158216464834,654
+MovieLens-1M,cosine_normalized,42,tail,20,0.01098901098901099,0.0039143646934947495,91
+MovieLens-1M,cosine_normalized,42,medium,20,0.06983372921615202,0.02459766824563988,2105
+MovieLens-1M,cosine_normalized,42,head,20,0.12825860271115747,0.0494799944846484,3836
+MovieLens-1M,cosine_normalized,42,unknown,20,0.0,0.0,3
+MovieLens-1M,cosine_normalized,43,tail,20,0.01098901098901099,0.0025869111358971237,91
+MovieLens-1M,cosine_normalized,43,medium,20,0.065083135391924,0.022754009577164704,2105
+MovieLens-1M,cosine_normalized,43,head,20,0.12695516162669448,0.049598225838781484,3836
+MovieLens-1M,cosine_normalized,43,unknown,20,0.0,0.0,3
+MovieLens-1M,cosine_normalized,44,tail,20,0.01098901098901099,0.0033080219303734198,91
+MovieLens-1M,cosine_normalized,44,medium,20,0.07078384798099763,0.02324423625541123,2105
+MovieLens-1M,cosine_normalized,44,head,20,0.13399374348279458,0.05091876441342745,3836
+MovieLens-1M,cosine_normalized,44,unknown,20,0.0,0.0,3
+MovieLens-1M,dot_product,42,tail,20,0.01098901098901099,0.0030653070950673613,91
+MovieLens-1M,dot_product,42,medium,20,0.0166270783847981,0.004735852886097566,2105
+MovieLens-1M,dot_product,42,head,20,0.19681960375391033,0.07652701716861907,3836
+MovieLens-1M,dot_product,42,unknown,20,0.0,0.0,3
+MovieLens-1M,dot_product,43,tail,20,0.0,0.0,91
+MovieLens-1M,dot_product,43,medium,20,0.019002375296912115,0.005931028020945222,2105
+MovieLens-1M,dot_product,43,head,20,0.19421272158498437,0.07741313804785213,3836
+MovieLens-1M,dot_product,43,unknown,20,0.0,0.0,3
+MovieLens-1M,dot_product,44,tail,20,0.01098901098901099,0.002886258626782347,91
+MovieLens-1M,dot_product,44,medium,20,0.015676959619952493,0.004384340567611842,2105
+MovieLens-1M,dot_product,44,head,20,0.20255474452554745,0.07816123046170191,3836
+MovieLens-1M,dot_product,44,unknown,20,0.0,0.0,3

@@ -1,0 +1,5 @@
+dataset,model,run,K,Recall,NDCG,n
+Amazon Beauty 3-core warm-start,ItemCF,deterministic,10,0.3614457831325301,0.16950652159481502,1245
+Amazon Beauty 3-core warm-start,ItemCF,deterministic,20,0.7164658634538152,0.26329777856482794,1245
+Amazon Beauty 3-core warm-start,Popularity,deterministic,10,0.36947791164658633,0.16884824463151887,1245
+Amazon Beauty 3-core warm-start,Popularity,deterministic,20,0.43775100401606426,0.1868338246345607,1245

@@ -1,0 +1,3 @@
+dataset,n_items,pearson,spearman,min_degree,median_degree,max_degree
+MovieLens-1M,3525,0.6646157395687541,0.27861222513654105,1,48.0,2805
+Amazon Beauty,164,0.8660381706677455,0.9050127389771422,1,3.0,632

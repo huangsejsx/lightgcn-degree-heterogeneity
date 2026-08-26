@@ -1,0 +1,6 @@
+generation_seed,cv_increases_low_to_high,gini_increases_low_to_high,head_test_share_increases_low_to_high,tail_test_share_decreases_low_to_high
+40,True,True,True,True
+41,True,True,True,True
+42,True,True,True,True
+43,True,True,True,True
+44,True,True,True,True
