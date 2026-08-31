@@ -1,0 +1,14 @@
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabular}{lrrrrr}
+\hline
+Dataset & Head $n$ & Tail $n$ & Dot gap & Cosine gap & $\Delta_{\mathrm{norm}}$ [95\% CI] \\
+\hline
+Amazon Beauty warm-start & 654 & 67 & 0.5699 & 0.4858 & 0.0841 [0.0557, 0.1180] \\
+MovieLens-1M & 3836 & 91 & 0.1905 & 0.1187 & 0.0718 [0.0597, 0.0849] \\
+\hline
+\end{tabular}
+\caption{Bootstrap confidence intervals for the reduction in the LightGCN head--tail Recall@20 gap after cosine-normalised scoring. The bootstrap resamples held-out interactions within the head and tail item groups with replacement. Dot-product and cosine-normalised outcomes are kept paired for each held-out interaction after averaging predictions across optimisation seeds 42, 43, and 44.}
+\label{tab:cosine_gap_bootstrap_ci}
+\end{table}
